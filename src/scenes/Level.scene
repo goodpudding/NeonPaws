@@ -14,74 +14,54 @@
     "displayList": [
         {
             "type": "Image",
-            "id": "bb2d413c-02b3-404d-b1c0-cf46ce1e7f07",
-            "label": "fufuSuperDino",
+            "id": "f35d60ee-82ea-4aeb-a36d-052a62d68870",
+            "label": "background",
             "texture": {
-                "key": "FufuSuperDino"
+                "key": "Background"
             },
             "x": 640,
-            "y": 257,
-            "list": [
-                {
-                    "prefabId": "a06ed60b-79f1-4444-bf35-89046f71f954",
-                    "id": "0eb8a724-16b2-4c55-8b33-1d41fc1b3663",
-                    "label": "onPointerDownScript",
-                    "list": [
-                        {
-                            "prefabId": "0e39177a-6e19-4b56-a7c2-2360a2e41505",
-                            "id": "5d148849-dd2d-4bb7-b17d-a74ea5a8bd14",
-                            "label": "pushAction"
-                        }
-                    ]
-                },
-                {
-                    "prefabId": "7028a0e2-cd14-44b7-b2a4-68dac16ece00",
-                    "id": "6056dec7-1936-4d08-a736-01fba7653e6b",
-                    "label": "onAwakeScript_1",
-                    "list": [
-                        {
-                            "prefabId": "3d337935-cdca-4937-9126-9f75bc2486de",
-                            "id": "65da982b-7762-4f83-b2b9-dfd970a6d5a8",
-                            "unlock": [
-                                "from"
-                            ],
-                            "label": "moveInSceneActionScript_1",
-                            "from": "TOP"
-                        }
-                    ]
-                }
-            ]
+            "y": 360,
+            "scaleX": 0.9187739718044534,
+            "scaleY": 0.9187739718044534
+        },
+        {
+            "type": "Rectangle",
+            "id": "cfc12ab9-4df5-4aa2-baba-0af0ac716efa",
+            "label": "menuBackground",
+            "x": 640,
+            "y": 360,
+            "scaleX": 4.007059581964025,
+            "scaleY": 4.007059581964025,
+            "isFilled": true,
+            "fillColor": "#008b8b",
+            "fillAlpha": 0.6,
+            "strokeColor": "#0A0A0A",
+            "lineWidth": 3,
+            "isStroked": true,
+            "width": 128,
+            "height": 128
         },
         {
             "type": "Text",
-            "id": "5c228da6-971a-4347-84e8-9f62464ba76d",
-            "label": "text",
-            "x": 640,
-            "y": 458,
-            "originX": 0.5,
-            "originY": 0.5,
-            "text": "Phaser 3 + Phaser Editor 2D\nWebpack + TypeScript",
-            "align": "center",
-            "fontFamily": "Arial",
-            "fontSize": "3em",
-            "list": [
-                {
-                    "prefabId": "7028a0e2-cd14-44b7-b2a4-68dac16ece00",
-                    "id": "b73d9d2e-788e-432c-ab50-432af7528ab8",
-                    "label": "onAwakeScript",
-                    "list": [
-                        {
-                            "prefabId": "3d337935-cdca-4937-9126-9f75bc2486de",
-                            "id": "df899133-f92d-4204-8adc-8135d0dc08b6",
-                            "unlock": [
-                                "from"
-                            ],
-                            "label": "moveInSceneActionScript",
-                            "from": "BOTTOM"
-                        }
-                    ]
-                }
-            ]
+            "id": "5bf2fa4c-82e6-4bc8-ab27-2db160f3553f",
+            "label": "Title",
+            "x": 454,
+            "y": 121,
+            "scaleX": 1.677403153336308,
+            "scaleY": 1.677403153336308,
+            "text": "Neon Paws: \nCyber Squad",
+            "fontFamily": "display",
+            "fontSize": "40px",
+            "fontStyle": "bold",
+            "color": "#C71585",
+            "stroke": "#9400D3",
+            "strokeThickness": 2,
+            "shadow.offsetX": 5,
+            "shadow.offsetY": 5,
+            "shadow.stroke": true,
+            "shadow.fill": true,
+            "shadow.color": "#FF69B4",
+            "shadow.blur": 10
         }
     ],
     "plainObjects": [],

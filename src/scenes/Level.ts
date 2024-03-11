@@ -4,10 +4,6 @@
 /* START OF COMPILED CODE */
 
 import Phaser from "phaser";
-import { OnPointerDownScript } from "@phasereditor2d/scripts-core";
-import { PushActionScript } from "@phasereditor2d/scripts-simple-animations";
-import { OnAwakeScript } from "@phasereditor2d/scripts-core";
-import { MoveInSceneActionScript } from "@phasereditor2d/scripts-simple-animations";
 /* START-USER-IMPORTS */
 /* END-USER-IMPORTS */
 
@@ -23,38 +19,28 @@ export default class Level extends Phaser.Scene {
 
 	editorCreate(): void {
 
-		// fufuSuperDino
-		const fufuSuperDino = this.add.image(640, 257, "FufuSuperDino");
+		// background
+		const background = this.add.image(640, 360, "Background");
+		background.scaleX = 0.9187739718044534;
+		background.scaleY = 0.9187739718044534;
 
-		// onPointerDownScript
-		const onPointerDownScript = new OnPointerDownScript(fufuSuperDino);
+		// menuBackground
+		const menuBackground = this.add.rectangle(640, 360, 128, 128);
+		menuBackground.scaleX = 4.007059581964025;
+		menuBackground.scaleY = 4.007059581964025;
+		menuBackground.isFilled = true;
+		menuBackground.fillColor = 35723;
+		menuBackground.fillAlpha = 0.6;
+		menuBackground.isStroked = true;
+		menuBackground.strokeColor = 657930;
+		menuBackground.lineWidth = 3;
 
-		// pushAction
-		new PushActionScript(onPointerDownScript);
-
-		// onAwakeScript_1
-		const onAwakeScript_1 = new OnAwakeScript(fufuSuperDino);
-
-		// moveInSceneActionScript_1
-		const moveInSceneActionScript_1 = new MoveInSceneActionScript(onAwakeScript_1);
-
-		// text
-		const text = this.add.text(640, 458, "", {});
-		text.setOrigin(0.5, 0.5);
-		text.text = "Phaser 3 + Phaser Editor 2D\nWebpack + TypeScript";
-		text.setStyle({ "align": "center", "fontFamily": "Arial", "fontSize": "3em" });
-
-		// onAwakeScript
-		const onAwakeScript = new OnAwakeScript(text);
-
-		// moveInSceneActionScript
-		const moveInSceneActionScript = new MoveInSceneActionScript(onAwakeScript);
-
-		// moveInSceneActionScript_1 (prefab fields)
-		moveInSceneActionScript_1.from = "TOP";
-
-		// moveInSceneActionScript (prefab fields)
-		moveInSceneActionScript.from = "BOTTOM";
+		// Title
+		const title = this.add.text(454, 121, "", {});
+		title.scaleX = 1.677403153336308;
+		title.scaleY = 1.677403153336308;
+		title.text = "Neon Paws: \nCyber Squad";
+		title.setStyle({ "color": "#C71585", "fontFamily": "display", "fontSize": "40px", "fontStyle": "bold", "stroke": "#9400D3", "strokeThickness":2,"shadow.offsetX":5,"shadow.offsetY":5,"shadow.color": "#FF69B4", "shadow.blur":10,"shadow.stroke":true,"shadow.fill":true});
 
 		this.events.emit("scene-awake");
 	}
