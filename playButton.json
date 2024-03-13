@@ -1,0 +1,46 @@
+{
+    "anims": [
+        {
+            "key": "activeButtonButton Active",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "Button Active",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 24,
+            "skipMissedFrames": true,
+            "repeat": -1
+        },
+        {
+            "key": "playButton",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "Button Active",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Button Normal",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 2,
+            "skipMissedFrames": true
+        }
+    ],
+    "globalTimeScale": 1,
+    "meta": {
+        "app": "Phaser Editor 2D v3",
+        "contentType": "Phaser v3 Animations"
+    },
+    "settings": {
+        "sourceLang": "JAVA_SCRIPT",
+        "esModule": false,
+        "generateCode": false
+    }
+}

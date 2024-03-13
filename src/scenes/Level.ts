@@ -4,6 +4,7 @@
 /* START OF COMPILED CODE */
 
 import Phaser from "phaser";
+import Button from "../components/Button";
 /* START-USER-IMPORTS */
 /* END-USER-IMPORTS */
 
@@ -36,14 +37,22 @@ export default class Level extends Phaser.Scene {
 		menuBackground.lineWidth = 3;
 
 		// Title
-		const title = this.add.text(454, 121, "", {});
+		const title = this.add.text(448.7760405196609, 121, "", {});
 		title.scaleX = 1.677403153336308;
 		title.scaleY = 1.677403153336308;
 		title.text = "Neon Paws: \nCyber Squad";
 		title.setStyle({ "color": "#C71585", "fontFamily": "display", "fontSize": "40px", "fontStyle": "bold", "stroke": "#9400D3", "strokeThickness":2,"shadow.offsetX":5,"shadow.offsetY":5,"shadow.color": "#FF69B4", "shadow.blur":10,"shadow.stroke":true,"shadow.fill":true});
 
+		// playButton
+		const playButton = new Button(this, 620, 374);
+		this.add.existing(playButton);
+
+		this.playButton = playButton;
+
 		this.events.emit("scene-awake");
 	}
+
+	private playButton!: Button;
 
 	/* START-USER-CODE */
 

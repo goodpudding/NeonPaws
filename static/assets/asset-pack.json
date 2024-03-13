@@ -2,14 +2,105 @@
     "section1": {
         "files": [
             {
+                "url": "assets/animations.json",
+                "type": "animation",
+                "key": "animations"
+            },
+            {
                 "url": "assets/Background.png",
                 "type": "image",
                 "key": "Background"
             },
             {
+                "url": "assets/Button Active.png",
+                "type": "image",
+                "key": "Button Active"
+            },
+            {
+                "url": "assets/Button Disable.png",
+                "type": "image",
+                "key": "Button Disable"
+            },
+            {
+                "url": "assets/Button Hover.png",
+                "type": "image",
+                "key": "Button Hover"
+            },
+            {
+                "url": "assets/Button Normal.png",
+                "type": "image",
+                "key": "Button Normal"
+            },
+            {
+                "url": "assets/Card X1.png",
+                "type": "image",
+                "key": "Card X1"
+            },
+            {
+                "url": "assets/Card X2.png",
+                "type": "image",
+                "key": "Card X2"
+            },
+            {
+                "url": "assets/Card X3.png",
+                "type": "image",
+                "key": "Card X3"
+            },
+            {
+                "url": "assets/Card X5.png",
+                "type": "image",
+                "key": "Card X5"
+            },
+            {
+                "url": "assets/Card X6.png",
+                "type": "image",
+                "key": "Card X6"
+            },
+            {
                 "url": "assets/FufuSuperDino.png",
                 "type": "image",
                 "key": "FufuSuperDino"
+            },
+            {
+                "url": "assets/Keyboard Extras.png",
+                "frameConfig": {
+                    "frameWidth": 32,
+                    "frameHeight": 16,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "Keyboard Extras"
+            },
+            {
+                "url": "assets/Keyboard Letters and Symbols.png",
+                "frameConfig": {
+                    "frameWidth": 16,
+                    "frameHeight": 16,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "Keyboard Letters and Symbols"
+            },
+            {
+                "url": "assets/Panel Empty.png",
+                "type": "image",
+                "key": "Panel Empty"
+            },
+            {
+                "url": "assets/Panel Empty Green.png",
+                "type": "image",
+                "key": "Panel Empty Green"
+            },
+            {
+                "url": "assets/Panel Red.png",
+                "type": "image",
+                "key": "Panel Red"
             },
             {
                 "url": "assets/terminal.png",
